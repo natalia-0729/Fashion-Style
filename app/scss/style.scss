@@ -3,4 +3,68 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  background: url('../images/main-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__inner{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo{
+  font-size: 16px;
+  line-height: 20px;
+  color: $title;
+  @extend %montserrat-700;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 80px;
+  }
+  &__list-link, &__phone-num{
+    color: $title;
+    line-height: 25.63px;
+    transition: all .3s;
+  }
+  &__list-link:hover,
+  &__phone-num:hover,
+  li:nth-child(4){
+    @extend %montserrat-500;
+  }
+  &__phone{
+    display: flex;
+  }
+  &__phone-icon{
+    margin-left: 236px;
+    margin-right: 17px;
+  }
+}
+
+.cosmetic{
+  background: url('../images/cosmetic.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1080px;
+  &__content-img{
+    padding-top: 760px;
+    margin-left: 750px;
+  }
+  &__content-descr{
+    margin-left: 750px;
+  }
+  
+}
+
+
+
+
 @import 'media';
