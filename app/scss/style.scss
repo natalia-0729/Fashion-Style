@@ -56,10 +56,10 @@
   height: 1080px;
   &__content-img{
     padding-top: 760px;
-    margin-left: 750px;
+    margin-left: 830px;
   }
   &__content-descr{
-    margin-left: 750px;
+    margin-left: 800px;
   }
 }
 
@@ -69,7 +69,7 @@
 }
 
 .services{
-  &__items{
+  &__item{
     display: flex;
     align-items: center;
   }
@@ -87,6 +87,122 @@
     margin-left: 377px;
   }
 }
+.slick-next, .slick-prev{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 53%;
+}
+.slick-next{
+  right: 0;
+  margin-right: 120px;
+}
+
+.portfolio{
+  padding-top: 120px;
+  background-color: $bg;
+  &__text{
+    margin-bottom: 120px;
+  }
+  &__filter{
+    text-align: center;
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    line-height: 25.6px;
+    @extend %montserrat-500;
+    text-transform: uppercase;
+    color: $title;
+    margin-right: 80px;
+    margin-bottom: 58px;
+    padding-bottom: 4px;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__btn:first-child{
+    @extend %montserrat-600;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &__images{
+    position: relative;
+    &:nth-child(2){
+      grid-row: span 2;
+    }
+    &:nth-child(3){
+      grid-column: span 2;
+    }
+    &:hover .portfolio__images-link{
+      opacity: 1;
+    }
+  }
+  &__images-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 25.6px;
+    text-transform: uppercase;
+    color: $title;
+    @extend %montserrat-500;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: all .3s;
+  }
+}
+
+.comment{
+  padding: 120px 0;
+  background: $bg;
+  &__container{
+    max-width: 1390px;
+  }
+  &__title{
+    margin-bottom: 60px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__subtitle{
+    margin: 20px 0;
+  }
+  &__text{
+    width: 604px;
+  }
+}
+.slick-prev{
+  margin-left: -115px;
+ }
+ .slick-next__comment{
+  margin-right: -115px;
+}
+ 
 
 .sale{
   background-repeat: no-repeat;
@@ -99,11 +215,7 @@
     margin-bottom: 20px;
   }
   &__subtitle{
-    color: $accent;
-    font-size: 16px;
-    line-height: 25.6px;
     margin-bottom: 40px;
-    @extend %montserrat-400;
   }
   &__text{
     width: 475px;
@@ -111,6 +223,39 @@
   }
   &__btn{
     margin-left: 235px;
+  }
+}
+.team{
+  padding: 120px 0;
+  background-color: $bg;
+  &__text{
+    margin-bottom: 80px;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item + .team__item{
+    margin-left: 20px;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__item-title{
+    color: $title;
+    text-transform: uppercase;
+    margin: 40px 0 16px;
+  }
+  &__item-text{
+    font-size: 12px;
+    line-height: 19.2px;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: 30px;
+  }
+  &__socials{
+    margin-left: 180px;
   }
 }
 
@@ -183,28 +328,6 @@
     margin: 27px 0 75px;
     width: 450px;
   }
-  &__socials{
-    display: flex;
-    align-items: center;
-  }
-  &__social-link +.footer__social-link{
-    margin-left: 40px;
-  }
-  &__social-link{
-    transition: all .3s;
-    &:hover{
-      path{
-        fill: $accent;
-      }
-      border: 1px solid $accent;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;  
-      text-align: center;
-      display: inline;
-      padding-top: 6px;
-    }
-  }
   &__items{
     display: flex;
   }
@@ -227,7 +350,6 @@
     margin-top: 8px;
   }
 }
-
 
 
 @import 'media';

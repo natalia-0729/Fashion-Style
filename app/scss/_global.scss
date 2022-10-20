@@ -5,7 +5,7 @@ body{
   color: $text;
 }
 .container{
-  max-width: 1400px;
+  max-width: 1480px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -46,6 +46,12 @@ body{
   font-size: 18px;
   line-height: 28.8px;
 }
+.subtitle{
+  color: $accent;
+  font-size: 16px;
+  line-height: 25.6px;
+  @extend %montserrat-400;
+}
 .btn{
   color: $accent;
   text-transform: uppercase;
@@ -62,3 +68,27 @@ body{
     margin-left: 20px;
   }
 }
+
+.socials{
+  display: flex;
+  align-items: center;
+}
+  .social-link + .social-link{
+    margin-left: 40px;
+  }
+  .social-link{
+    transition: all .3s;
+    &:hover{
+      path{
+        fill: $accent;
+      }
+      border: 1px solid $accent;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;  
+      text-align: center;
+      display: inline;
+      padding-top: 6px;
+    }
+  }
+
