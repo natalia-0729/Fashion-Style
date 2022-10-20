@@ -68,6 +68,26 @@
   padding: 120px 0;
 }
 
+.services{
+  &__items{
+    display: flex;
+    align-items: center;
+  }
+  &__num{
+    font-size: 120px;
+    line-height: 146px;
+    color: $accent;
+    @extend %montserrat-700;
+    margin-bottom: 60px;
+  }
+  &__text{
+    margin-bottom: 60px;
+  }
+  &__btn{
+    margin-left: 377px;
+  }
+}
+
 .sale{
   background-repeat: no-repeat;
   background-position: right;
