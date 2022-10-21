@@ -11,46 +11,54 @@
 <body>
 
 <header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a class="logo header__logo" href="#body">Fashion Style</a>
-      <nav class="menu">
-        <ul class="menu__list">
-           <li class="menu__list-item"> <a class="menu__list-link" href="#about-us">О нас</a> </li>
-          <li class="menu__list-item"> <a class="menu__list-link" href="#salon">Салоны</a> </li>
-          <li class="menu__list-item"> <a class="menu__list-link" href="#team">Команда</a> </li>
-          <li class="menu__list-item"> <a class="menu__list-link" href="#appointment">Запись</a> </li>
-          <li class="menu__list-item"> <a class="menu__list-link" href="#sale">Акции</a> </li>
-        </ul>
-        <div class="menu__phone">
-          <img class="menu__phone-icon" src="images/header-phone.svg" alt="phone icon">
-          <a class="menu__phone-num" href="tel:+79101402002">8 (910) 140-20-02</a>
-        </div>
-      </nav>
-    </div>
-      
-    <div class="header__content">
-      <img class="square__content-img header__content-img" src="images/square-1.jpg" alt="">
-      <div class="square__content-descr header__content-descr">
-        <p class="square__content-text header__content-text">Все услуги в одном месте. Парихмахерская. Маникюр и педикюр. Косметология</p>
-        <h2 class="square__content-title header__title">Salon.</h2>
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <a class="logo header__top-logo" href="#body">Fashion Style</a>
+        <nav class="menu">
+          <button class="menu__btn">
+            <img src="images/menu-btn.svg.svg" alt="menu button">
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item"> <a class="menu__list-link menu__list-link-first" href="#about-us">О нас</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#salon">Салоны</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#team">Команда</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#appointment">Запись</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#sale">Акции</a> </li>
+          </ul>
+          <div class="menu__phone">
+            <img class="menu__phone-icon" src="images/header-phone.svg" alt="phone icon">
+            <a class="menu__phone-num" href="tel:+79101402002">8 (910) 140-20-02</a>
+          </div>
+        </nav>
       </div>
     </div>
-  
+  </div>
+      
+ <!--<div class="header__content">
+    <div class="container">
+      <div class="header__content-inner">
+        <img src="images/square-1.jpg" alt="">
+        <div class="header__content-descr ">
+          <p class="square__content-text header__content-text">Все услуги в одном месте. Парихмахерская. Маникюр и педикюр. Косметология</p>
+          <h2 class="square__content-title header__content-title">salon.</h2>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
 <section class="cosmetic">
   <div class="container">
-    <div class="cosmetic__content">
-      <img class="cosmetic__content-img" src="images/square-2.jpg" alt="">
-      <div class="square__content-descr cosmetic__content-descr">
-        <p class="square__content-text cosmetic__content-text">Органическая косметика в уходе за вашим телом. Создано самой природой.</p>
-        <h2 class="square__content-title cosmetic__title">Cosmetic.</h2>
+      <div class="cosmetic__content-inner">
+        <img src="images/square-2.jpg" alt="">
+        <div class="cosmetic__content-descr">
+          <p class="square__content-text cosmetic__content-text">Органическая косметика в уходе за вашим телом. Создано самой природой.</p>
+          <h2 class="square__content-title cosmetic__content-title">Cosmetic.</h2>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+</section>-->
 
 <section class="about-us">
   <div class="container">
@@ -62,10 +70,10 @@
 <section class="services">
   <div class="services__inner">
 
-    <div class="services__items">
+   <div class="services__items">
       <div class="services__item">
         <img class="services__img" src="images/slaider-bg-1.jpg" alt="">
-        <div class="container">
+        <div class="services__container">
           <div class="services__descr">
             <p class="services__num">01</p>
             <h2 class="title services__title">ПАРИКМАХЕРСКОЕ ИСКУССТВО</h2>
@@ -76,10 +84,10 @@
       </div>
     </div>
   
-    <div class="services__items">
+   <div class="services__items">
       <div class="services__item">
         <img class="services__img" src="images/slaider-bg-2.jpg" alt="">
-        <div class="container">
+        <div class="services__container">
           <div class="services__descr">
             <p class="services__num">02</p>
             <h2 class="title services__title">КОСМЕТОЛОГИЯ</h2>
@@ -93,7 +101,7 @@
     <div class="services__items">
       <div class="services__item">
         <img class="services__img" src="images/slaider-bg-3.jpg" alt="">
-        <div class="container">
+        <div class="services__container">
           <div class="services__descr">
             <p class="services__num">03</p>
             <h2 class="title services__title">НОГТЕВОЙ СЕРВИС</h2>
@@ -107,7 +115,7 @@
     <div class="services__items">
       <div class="services__item">
         <img class="services__img" src="images/slaider-bg-4.jpg" alt="">
-        <div class="container">
+        <div class="services__container">
           <div class="services__descr">
             <p class="services__num">04</p>
             <h2 class="title services__title">БРОВИ И РЕСНИЦЫ</h2>
@@ -121,7 +129,7 @@
   </div>
 </section>
 
-<section class="portfolio">
+<!-- <section class="portfolio">
   <div class="container">
     <div class="portfolio__descr">
       <h2 class="title portfolio__title">Портфолио</h2>
@@ -490,7 +498,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 
   <script src="js/slick.min.js"></script> <!--плагин для слайдера-->
