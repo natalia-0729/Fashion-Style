@@ -4,6 +4,14 @@
 @import 'global';
 
 .header{
+  &__top{ /*для липкой шапки*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 10;
+  }
   &__top-inner{
     padding: 40px 20px;
     display: flex;
@@ -81,23 +89,29 @@
     position: absolute;
     bottom: 0;
   }
-  
 }
 
 .about-us{
   background-color: $bg;
-  padding: 120px 20px;
+  padding: 120px 30px;
 }
 
 .services{
   &__container{
-      max-width: 600px;
-      padding-left: 50px;
+      max-width: 800px;
+      padding: 10px 30px 0 130px;
       margin: 0;
   }
   &__item{
     display: flex;
     align-items: center;
+  }
+  &__img{
+    min-width: 0;
+    min-height: 0;
+  }
+  &__descr{
+    max-width: 537px;
   }
   &__num{
     font-size: 120px;
@@ -106,29 +120,42 @@
     @extend %montserrat-700;
     margin-bottom: 60px;
   }
+  &__title{
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $title;
+    @extend %montserrat-600;
+    margin-bottom: 40px;
+  }
   &__text{
     margin-bottom: 60px;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28.8px;
   }
   &__btn{
     margin-left: 315px;
   }
-}
-.slick-next, .slick-prev{
+  &__slick-next{
   border: none;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
   position: absolute;
   top: 50%;
-}
-.slick-next{
+
   right: 0;
   margin-right: 100px;
+  }
 }
 
 .portfolio{
   padding-top: 120px;
   background-color: $bg;
+  &__descr{
+    padding: 0 30px;
+  }
   &__text{
     margin-bottom: 120px;
   }
@@ -149,6 +176,7 @@
     margin-bottom: 58px;
     padding-bottom: 4px;
     transition: all .3s;
+    cursor: pointer;
     &:hover{
       color: $accent;
       border-bottom: 1px solid $accent;
@@ -202,18 +230,13 @@
 }
 
 .comment{
-  padding: 120px 0;
+  padding: 120px 30px;
   background: $bg;
   &__container{
-    max-width: 1390px;
+    padding: 0 20px;
   }
   &__title{
     margin-bottom: 60px;
-  }
-  &__items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   &__subtitle{
     margin: 20px 0;
@@ -221,21 +244,37 @@
   &__text{
     width: 604px;
   }
-}
-.slick-prev{
+ &__item{
+  margin-left: 40px;
+ }
+ &__slick-next, &__slick-prev{
+   border: none;
+   background-color: transparent;
+   padding: 0;
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+ }
+ &__slick-prev{
   margin-left: -115px;
  }
- .slick-next__comment{
+ &__slick-next{
+  right: 0;
   margin-right: -115px;
+ }
 }
  
 
 .sale{
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
   &__content{
-    padding: 94px 128px 94px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr{
+    padding-top: 94px;
+    padding-left: 30px;
+    padding-right: 120px;
+    margin: 0 auto;
   }
   &__title{
     margin-bottom: 20px;
@@ -250,23 +289,27 @@
   &__btn{
     margin-left: 235px;
   }
+  &__img{
+    min-width: 0;
+    min-height: 0;
+  }
 }
 .team{
-  padding: 120px 0;
+  padding: 120px 30px;
   background-color: $bg;
+  &__container{
+    padding: 0 20px;
+  }
   &__text{
     margin-bottom: 80px;
-  }
-  &__items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   &__item + .team__item{
     margin-left: 20px;
   }
   &__item{
     text-align: center;
+    max-width: 460px;
+    padding: 0 30px;
   }
   &__item-title{
     color: $title;
@@ -281,12 +324,27 @@
     margin-bottom: 30px;
   }
   &__socials{
-    margin-left: 180px;
+    justify-content: center;
   }
+  &__slick-next, &__slick-prev{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+  }
+  &__slick-prev{
+    margin-left: -115px;
+   }
+   &__slick-next{
+    right: 0;
+    margin-right: -115px;
+   }
 }
 
 .request{
-  padding: 120px 0;
+  padding: 120px 30px;
   &__title{
     margin-bottom: 20px;
   }
@@ -301,7 +359,7 @@
     outline: none;
     width: 340px;
     margin-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   &__btn{
     color: #fff;
@@ -318,7 +376,7 @@
 
 .contact{
   background-color: $bg;
-  padding: 80px 0 120px;
+  padding: 120px 30px;
   &__title{
     margin-bottom: 63px;
   }
@@ -339,14 +397,11 @@
 }
 
 .footer{
-  padding: 100px 0;
+  padding: 120px 30px;
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-  &__left{
-    width: 425px;
   }
   &__text {
     font-size: 14px;

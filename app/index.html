@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
 
 <header class="header">
-  <div class="header__top">
+<div class="header__top">
     <div class="container">
       <div class="header__top-inner">
         <a class="logo header__top-logo" href="#body">Fashion Style</a>
@@ -21,9 +21,9 @@
           </button>
           <ul class="menu__list">
             <li class="menu__list-item"> <a class="menu__list-link menu__list-link-first" href="#about-us">О нас</a> </li>
-            <li class="menu__list-item"> <a class="menu__list-link" href="#salon">Салоны</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#portfolio">Портфолио</a> </li>
             <li class="menu__list-item"> <a class="menu__list-link" href="#team">Команда</a> </li>
-            <li class="menu__list-item"> <a class="menu__list-link" href="#appointment">Запись</a> </li>
+            <li class="menu__list-item"> <a class="menu__list-link" href="#request">Запись</a> </li>
             <li class="menu__list-item"> <a class="menu__list-link" href="#sale">Акции</a> </li>
           </ul>
           <div class="menu__phone">
@@ -35,10 +35,10 @@
     </div>
   </div>
       
- <!--<div class="header__content">
+ <div class="header__content">
     <div class="container">
       <div class="header__content-inner">
-        <img src="images/square-1.jpg" alt="">
+        <img class="square__content-img" src="images/square-1.jpg" alt="">
         <div class="header__content-descr ">
           <p class="square__content-text header__content-text">Все услуги в одном месте. Парихмахерская. Маникюр и педикюр. Косметология</p>
           <h2 class="square__content-title header__content-title">salon.</h2>
@@ -51,16 +51,16 @@
 <section class="cosmetic">
   <div class="container">
       <div class="cosmetic__content-inner">
-        <img src="images/square-2.jpg" alt="">
+        <img class="square__content-img cosmetic__content-img" src="images/square-2.jpg" alt="">
         <div class="cosmetic__content-descr">
           <p class="square__content-text cosmetic__content-text">Органическая косметика в уходе за вашим телом. Создано самой природой.</p>
           <h2 class="square__content-title cosmetic__content-title">Cosmetic.</h2>
         </div>
       </div>
     </div>
-</section>-->
+</section>
 
-<section class="about-us">
+<section class="about-us" id="about-us">
   <div class="container">
     <h2 class="title">О нас</h2>
     <p class="text">У нас 10 салонов по России. В каждом из которых своя концепция. Но одно едино - качественный сервис. У нас более 5 240 довольных клиентов за 5 лет работы.</p>
@@ -70,15 +70,15 @@
 <section class="services">
   <div class="services__inner">
 
-   <div class="services__items">
+<div class="services__items">
       <div class="services__item">
         <img class="services__img" src="images/slaider-bg-1.jpg" alt="">
         <div class="services__container">
           <div class="services__descr">
             <p class="services__num">01</p>
-            <h2 class="title services__title">ПАРИКМАХЕРСКОЕ ИСКУССТВО</h2>
-            <p class="text services__text">Подчеркнем ваш образ за счёт стрижки, укладки, окрашивания, химической завивки, плетения волос, наращивания волос</p>
-            <a class="btn services__btn" href="#">Оставить заявку</a>
+            <h2 class="services__title">ПАРИКМАХЕРСКОЕ ИСКУССТВО</h2>
+            <p class=" services__text">Подчеркнем ваш образ за счёт стрижки, укладки, окрашивания, химической завивки, плетения волос, наращивания волос</p>
+            <a class="btn services__btn" href="#request">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -90,9 +90,9 @@
         <div class="services__container">
           <div class="services__descr">
             <p class="services__num">02</p>
-            <h2 class="title services__title">КОСМЕТОЛОГИЯ</h2>
-            <p class="text services__text">Сделаем вашу кожу гладкой и сияющей. Наши мастера подберут индивидуально для каждого клиента профессиональную уходовую косметику.</p>
-            <a class="btn services__btn" href="#">Оставить заявку</a>
+            <h2 class="services__title">КОСМЕТОЛОГИЯ</h2>
+            <p class="services__text">Сделаем вашу кожу гладкой и сияющей. Наши мастера подберут индивидуально для каждого клиента профессиональную уходовую косметику.</p>
+            <a class="btn services__btn" href="#request">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -104,9 +104,9 @@
         <div class="services__container">
           <div class="services__descr">
             <p class="services__num">03</p>
-            <h2 class="title services__title">НОГТЕВОЙ СЕРВИС</h2>
-            <p class="text services__text">Красивые, ухоженные ногти — залог уверенности в себе и высокой самооценки. </p>
-            <a class="btn services__btn" href="#">Оставить заявку</a>
+            <h2 class="services__title">НОГТЕВОЙ СЕРВИС</h2>
+            <p class="services__text">Красивые, ухоженные ногти — залог уверенности в себе и высокой самооценки. </p>
+            <a class="btn services__btn" href="#request">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -118,9 +118,9 @@
         <div class="services__container">
           <div class="services__descr">
             <p class="services__num">04</p>
-            <h2 class="title services__title">БРОВИ И РЕСНИЦЫ</h2>
-            <p class="text services__text">Наращивание ресниц сделает ваш взгяд соблазнительным и ярким. А грамотно-подобранная форма бровей сделать лицо более красивым и гармоничным.</p>
-            <a class="btn services__btn" href="#">Оставить заявку</a>
+            <h2 class="services__title">БРОВИ И РЕСНИЦЫ</h2>
+            <p class="services__text">Наращивание ресниц сделает ваш взгяд соблазнительным и ярким. А грамотно-подобранная форма бровей сделать лицо более красивым и гармоничным.</p>
+            <a class="btn services__btn" href="#request">Оставить заявку</a>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
   </div>
 </section>
 
-<!-- <section class="portfolio">
+ <section class="portfolio" id="portfolio">
   <div class="container">
     <div class="portfolio__descr">
       <h2 class="title portfolio__title">Портфолио</h2>
@@ -137,104 +137,100 @@
     </div>
     <div class="portfolio__filter">
       <button class="portfolio__btn" data-filter="all">Все</button>
-      <button class="portfolio__btn" data-filter="">Ногти</button>
-      <button class="portfolio__btn" data-filter="">Брови</button>
-      <button class="portfolio__btn" data-filter="">Ресницы</button>
-      <button class="portfolio__btn" data-filter="">Волосы</button>
-      <button class="portfolio__btn" data-filter="">Кожа</button>
+      <button class="portfolio__btn" data-filter=".category-a">Ногти</button>
+      <button class="portfolio__btn" data-filter=".category-b">Брови</button>
+      <button class="portfolio__btn" data-filter=".category-c">Ресницы</button>
+      <button class="portfolio__btn" data-filter=".category-d">Волосы</button>
+      <button class="portfolio__btn" data-filter=".category-e">Кожа</button>
     </div>
   </div>
   <div class="portfolio__content">
-    <div class="portfolio__images mix category-a">
+    <div class="portfolio__images mix category-d">
       <img src="images/catalog-1.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
-    <div class="portfolio__images mix category-a">
+    <div class="portfolio__images mix category-d">
       <img src="images/portfolio-1.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
-    <div class="portfolio__images mix category-b">
+    <div class="portfolio__images mix category-e">
       <img src="images/catalog-3.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
-    <div class="portfolio__images mix category-b">
+    <div class="portfolio__images mix category-c">
       <img src="images/catalog-4.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
-    <div class="portfolio__images mix category-b">
+    <div class="portfolio__images mix category-a">
       <img src="images/catalog-5.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
-    <div class="portfolio__images mix category-c">
-      <img src="images/catalog-6.jpg" alt="Картинка-6">
+    <div class="portfolio__images mix category-b">
+      <img src="images/catalog-6.jpg" alt="">
       <a class="portfolio__images-link" href="#">Смотреть</a>
     </div>
   </div>
 </section>
 
 <section class="comment">
-  <div class="container comment__container">
+  <div class="container">
     <h2 class="title comment__title">Отзывы</h2>
-    <div class="comment__inner">
+    <div class="comment__container">
 
-      <div class="comment__content">
+      <div class="comment__items">
 
-        <div class="comment__items">
-          <div class="comment__item">
-            <img class="comment__icon" src="images/comment-1.png" alt="">
-            <h6 class="subtitle comment__subtitle">Анастасия Герасимова</h6>
-            <p class="text comment__text">Посещала салон неоднократно, очень нравится мастер ногтевого сервиса, всегда всё аккуратно, стерильно, с душой. </p>
-          </div>
-          <div class="comment__item">
-            <img class="comment__icon" src="images/comment-2.png" alt="">
-            <h6 class="subtitle comment__subtitle">Лена Тесян</h6>
-            <p class="text comment__text">Подстригли и восстановили волосы. Профессионально,быстро! Очень приятная и позитивная обстановка!</p>
-          </div>
-        </div>    
-      </div>
-     
-      <div class="comment__content">
+        <div class="comment__item">
+          <img class="comment__icon" src="images/comment-1.png" alt="client's avatar">
+          <h6 class="subtitle comment__subtitle">Анастасия Герасимова</h6>
+          <p class="text comment__text">Посещала салон неоднократно, очень нравится мастер ногтевого сервиса, всегда всё аккуратно, стерильно, с душой. </p>
+        </div>
 
-        <div class="comment__items">
-          <div class="comment__item">
-            <img class="comment__icon" src="images/comment-1.png" alt="">
-            <h6 class="subtitle comment__subtitle">Анастасия Герасимова</h6>
-            <p class="text comment__text">Посещала салон неоднократно, очень нравится мастер ногтевого сервиса, всегда всё аккуратно, стерильно, с душой. </p>
-          </div>
-          <div class="comment__item">
-            <img class="comment__icon" src="images/comment-2.png" alt="">
-            <h6 class="subtitle comment__subtitle">Лена Тесян</h6>
-            <p class="text comment__text">Подстригли и восстановили волосы. Профессионально,быстро! Очень приятная и позитивная обстановка!</p>
-          </div>
-        </div>    
-      </div>
+        <div class="comment__item">
+          <img class="comment__icon" src="images/comment-2.png" alt="client's avatar">
+          <h6 class="subtitle comment__subtitle">Лена Тесян</h6>
+          <p class="text comment__text">Подстригли и восстановили волосы. Профессионально,быстро! Очень приятная и позитивная обстановка!</p>
+        </div>
 
+        <div class="comment__item">
+          <img class="comment__icon" src="images/comment-1.png" alt="client's avatar">
+          <h6 class="subtitle comment__subtitle">Анастасия Герасимова</h6>
+          <p class="text comment__text">Посещала салон неоднократно, очень нравится мастер ногтевого сервиса, всегда всё аккуратно, стерильно, с душой. </p>
+        </div>
+  
+        <div class="comment__item">
+          <img class="comment__icon" src="images/comment-2.png" alt="client's avatar">
+          <h6 class="subtitle comment__subtitle">Лена Тесян</h6>
+          <p class="text comment__text">Подстригли и восстановили волосы. Профессионально,быстро! Очень приятная и позитивная обстановка!</p>
+        </div>
+
+      </div>    
+    
     </div>
 
   </div>
 </section>
 
-<section class="sale" style="background-image: url('images/cosmetologist-bg.jpg');">
-  <div class="container">
+<section class="sale" id="sale">
     <div class="sale__content">
-      <h2 class="title sale__title">-20% на все услуги косметолога</h2>
-      <h6 class=" subtitle sale__subtitle">20.04 - 05.05.2021</h6>
-      <p class="text sale__text">Массаж лица и тела, уходовые процедуры по лицу и телу с использованием профессиональной косметики, спа-процедуры, простые аппаратные процедуры.</p>
-      <a class="btn sale__btn" href="#">Оставить заявку</a>
+      <div class="sale__descr">
+        <h2 class="title sale__title">-20% на все услуги косметолога</h2>
+        <h6 class=" subtitle sale__subtitle">20.04 - 05.05.2021</h6>
+        <p class="text sale__text">Массаж лица и тела, уходовые процедуры по лицу и телу с использованием профессиональной косметики, спа-процедуры, простые аппаратные процедуры.</p>
+        <a class="btn sale__btn" href="#request">Оставить заявку</a>
+      </div>
+      <img class="sale__img" src="images/cosmetologist-bg.jpg" alt="">
     </div>
-  </div>
 </section>
 
-<section class="team">
-  <div class="container">
+<section class="team" id="team">
+  <div class="container team__container">
     <h2 class="title team__title">Команда</h2>
-    <p class="text team__text">Управляет нашим бизнесом Елена с опытом работы в индустрии красоты более 10 лет. Под ее рукводством более 40 сотрудников. Раз в 4 месяца каждый проходит обучение - повышает уровенб своих навыков. </p>
+    <p class="text team__text">Управляет нашим бизнесом Елена с опытом работы в индустрии красоты более 10 лет. Под ее рукводством более 40 сотрудников. Раз в 4 месяца каждый проходит обучение - повышает уровень своих навыков. </p>
     <div class="team__inner">
 
-      <div class="team__content">
         <div class="team__items">
           <div class="team__item">
-            <img class="team__img" src="images/team-1.jpg" alt="">
+            <img class="team__img" src="images/team-1.jpg" alt="staffer's avatar">
             <h5 class="subtitle team__item-title">Елена Маркина</h5>
             <p class="team__item-text">Управляющая всеми салонами</p>
             <div class="socials team__socials">
@@ -258,7 +254,7 @@
           </div>
           
           <div class="team__item">
-            <img class="team__img" src="images/team-2.jpg" alt="">
+            <img class="team__img" src="images/team-2.jpg" alt="staffer's avatar">
             <h5 class="subtitle team__item-title">Анатолий Сергач</h5>
             <p class="team__item-text">менеджер отдела качества</p>
             <div class="socials team__socials">
@@ -283,7 +279,7 @@
         
         
           <div class="team__item">
-            <img class="team__img" src="images/team-3.jpg" alt="">
+            <img class="team__img" src="images/team-3.jpg" alt="staffer's avatar">
             <h5 class="subtitle team__item-title">Полина Смолина</h5>
             <p class="team__item-text">мастер маникюра</p>
             <div class="socials team__socials">
@@ -305,13 +301,9 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="team__content">
-        <div class="team__items">
           <div class="team__item">
-            <img class="team__img" src="images/team-1.jpg" alt="">
+            <img class="team__img" src="images/team-1.jpg" alt="staffer's avatar">
             <h5 class="subtitle team__item-title">Елена Маркина</h5>
             <p class="team__item-text">Управляющая всеми салонами</p>
             <div class="socials team__socials">
@@ -335,7 +327,7 @@
           </div>
           
           <div class="team__item">
-            <img class="team__img" src="images/team-2.jpg" alt="">
+            <img class="team__img" src="images/team-2.jpg" alt="staffer's avatar">
             <h5 class="subtitle team__item-title">Анатолий Сергач</h5>
             <p class="team__item-text">менеджер отдела качества</p>
             <div class="socials team__socials">
@@ -357,8 +349,7 @@
               </a>
             </div>
           </div>
-        
-        
+             
           <div class="team__item">
             <img class="team__img" src="images/team-3.jpg" alt="">
             <h5 class="subtitle team__item-title">Полина Смолина</h5>
@@ -383,13 +374,12 @@
             </div>
           </div>
         </div>
-      </div>
 
     </div>
   </div>
 </section>
 
-<section class="request">
+<section class="request" id="request">
   <div class="container">
     <h2 class="title request__title">Оставь заявку</h2>
     <p class="text request__text">После отправки ваших данных, администратор сразу же свяжется с вами и запишет вас на любую услуга салона. Спасибо, что с нами!</p>
@@ -472,10 +462,10 @@
         <div class="footer__item">
           <h3 class="footer__item-title">О нас</h3>
           <ul class="footer__lists">
-            <li class="footer__list"><a class="footer__list-link" href="#">Наша команда</a></li>
-            <li class="footer__list"><a class="footer__list-link" href="#">Запись</a></li>
-            <li class="footer__list"><a class="footer__list-link" href="#">Акции</a></li>
-            <li class="footer__list"><a class="footer__list-link" href="#">Салоны</a></li>
+            <li class="footer__list"><a class="footer__list-link" href="#team">Наша команда</a></li>
+            <li class="footer__list"><a class="footer__list-link" href="#request">Запись</a></li>
+            <li class="footer__list"><a class="footer__list-link" href="#sale">Акции</a></li>
+            <li class="footer__list"><a class="footer__list-link" href="#portfolio">Портфолио</a></li>
           </ul>
         </div>
         <div class="footer__item">
@@ -498,7 +488,7 @@
       </div>
     </div>
   </div>
-</footer> -->
+</footer>
 
 
   <script src="js/slick.min.js"></script> <!--плагин для слайдера-->
