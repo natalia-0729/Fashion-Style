@@ -1,3 +1,66 @@
+
+@media (min-width: 1930px){
+  .sale{
+    &__descr{
+        margin: auto;
+        padding: 0 30px;
+        width: 900px;
+    }
+    &__text{
+      font-size: 20px;
+      line-height: 32.8px;
+      width: 500px;
+    }
+  }
+}
+@media (min-width: 2300px){
+  .sale{
+    &__descr{
+      padding: 0 30px 0 100px;
+    }
+  }
+}
+@media (min-width: 3000px){
+  .sale{
+    &__descr{
+      padding: 0 30px 0 220px;
+    }
+    &__text{
+      width: 600px;
+    }
+  }
+}
+
+@media (min-width: 3205px){
+  .portfolio{
+    &__content{
+     grid-row-gap: 20px;
+     grid-column-gap: 5px;
+    }
+  }
+}
+@media (min-width: 3300px){
+  .portfolio{
+    &__content{
+     grid-row-gap: 40px;
+    }
+  }
+}
+@media (min-width: 3500px){
+  .portfolio{
+    &__content{
+     grid-row-gap: 50px;
+    }
+  }
+}
+@media (min-width: 3700px){
+  .portfolio{
+    &__content{
+     grid-row-gap: 110px;
+    }
+  }
+}
+
 @media (max-width: 1700px){
   .slick-dots{
     display: flex; /*чтобы дотсы стали в 1 линию*/
@@ -58,7 +121,6 @@
   }
 }
 
-
 @media (max-width: 1550px){
   .square{
     &__content-img{
@@ -108,6 +170,11 @@
     }
     &__btn{
       margin-left: 270px;
+    }
+  }
+  .sale{
+    &__content{
+      justify-content: space-between;
     }
   }
   .request{
@@ -522,6 +589,9 @@
     }
   }
   .header{
+    &__content{
+      min-height: 90vh;
+    }
     &__content-descr {
       right: 230px;
     }
@@ -547,9 +617,9 @@
     }
     &__list-link{
       display: block;
-      padding: 15px 0;
+      padding: 10px 0;
       color: $title;
-      font-size: 18px;
+      font-size: 16px;
      font-weight: 600;
      &:hover{
       font-weight: 700;
@@ -720,6 +790,12 @@
       right: 290px;
     }
   }
+  .menu{
+    &__list-link{
+      font-size: 14px;
+      padding: 6px 0;
+    }
+  }
   .cosmetic{
     &__content-descr{
       right: 160px;
@@ -835,6 +911,9 @@
 }
 
 @media (max-width: 580px){
+  .logo{
+    font-size: 14px;
+  }
   .square{
     &__content-title{
       font-size: 35px;
@@ -849,6 +928,12 @@
   .header{
     &__content-descr{
       right: 300px;
+    }
+  }
+  .menu{
+    &__list-link {
+      font-size: 12px;
+      padding: 4px 0;
     }
   }
   .services{
@@ -900,8 +985,8 @@
 @media (max-width: 480px){
   .text {
     width: 300px;
-    font-size: 12px;
-    line-height: 24.8px;
+    font-size: 11px;
+    line-height: 21.8px;
   }
   .square{
     &__content-title{
@@ -919,20 +1004,27 @@
       right: 265px;
     }
   }
+  .cosmetic{
+    min-height: 70vh;
+  }
   .portfolio{
     &__images-link{
       font-size: 8px;
     }
+    &__btn{
+      margin-right: 10px;
+     }
   }
   .comment{
     &__item{
       margin-bottom: 15;
     }
-    &__text{
-      width: 250px;
-      font-size: 13px;
-      line-height: 21px;
+    &__subtitle {
+      margin: 10px 0;
     }
+  }
+  .slick-dots{
+    margin-top: -20px;
   }
   .sale{
     &__title{
@@ -946,6 +1038,12 @@
     }
     &__btn{
       margin-left: 190px;
+    }
+  }
+  .team{
+    &__item-title{
+      font-size: 12px;
+      line-height: 18px;
     }
   }
   .request{
@@ -998,7 +1096,8 @@
   }
   .text {
     width: 250px;
-    font-size: 12px;
+    font-size: 10px;
+    line-height: 18px;
   }
   .about-us, .comment, .team, .request, .contact, .footer{
     padding: 40px 30px;
@@ -1007,6 +1106,9 @@
     padding-top: 40px;
     &__text{
       margin-bottom: 40px;
+    }
+    &__btn{
+      margin-right: 0;
     }
   }
   .comment{
